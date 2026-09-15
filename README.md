@@ -1,8 +1,11 @@
+Полный репозиторий - https://github.com/0porn1k/chess_guard
+
+
 Требования
-Python 3.11+
+Python 3.12
 uv — менеджер зависимостей и окружений
 Бинарник Stockfish 
-Токен Lichess API (для сбора корпуса партий) — https://lichess.org/account/oauth/token
+Токен Lichess API (опционально) — https://lichess.org/account/oauth/token
 ---
 Установка
 ```bash

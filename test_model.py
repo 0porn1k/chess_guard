@@ -1,15 +1,15 @@
-import pandas as pd
 import joblib
+import pandas as pd
+from pathlib import Path
 
-model = joblib.load("models/lgbm.joblib")
+# Абсолютный путь
+model_path = Path(r"C:\Users\portn\PycharmProjects\PythonProject3\models\lgbm.joblib")
+model = joblib.load(model_path)
 
-# Идеальный ход
 perfect = pd.DataFrame([{
     "match_top1": 1,
     "match_top3": 1,
     "cp_loss": 0
 }])
 
-print(model.predict_proba(perfect))
-# Ожидаемо: [[0.58, 0.42]] или около того
-# Если второе число (класс 1) < 0.7 → модель недообучена
+print("P(чит | идеальный ход):", model.predict_proba(perfect)[0, 1])

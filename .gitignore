@@ -5,6 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
+bin/stockfish.exe
+*.exe
 
 # Virtual environments
 .venv
