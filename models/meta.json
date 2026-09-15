@@ -1,0 +1,35 @@
+{
+  "feature_cols": [
+    "match_top1",
+    "match_top3",
+    "cp_loss",
+    "accuracy"
+  ],
+  "threshold": 0.5604345970731845,
+  "target_fpr": 0.05,
+  "metrics": {
+    "train": {
+      "auc_game": 0.999876460172132,
+      "fpr": 0.003610108303249084,
+      "recall": 0.9999999999999961,
+      "accuracy": 0.9981481481481481,
+      "tp": 263,
+      "tn": 276,
+      "fp": 1,
+      "fn": 0,
+      "threshold": 0.5604345970731845
+    },
+    "test": {
+      "auc_game": 1.0,
+      "fpr": 0.0,
+      "recall": 0.9999999999999898,
+      "accuracy": 1.0,
+      "tp": 97,
+      "tn": 83,
+      "fp": 0,
+      "fn": 0,
+      "threshold": 0.5604345970731845
+    },
+    "auc_move_test": 0.7955641919056553
+  }
+}
